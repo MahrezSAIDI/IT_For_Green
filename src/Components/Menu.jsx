@@ -1,9 +1,6 @@
 import React from 'react';
-
 function Menu({ onSelectOption }) {
     return (
-
-
         <div className='menu'>
             <div className='green'> <p className='text'>GreenOptimize</p></div>
             <div className='option_1' onClick={() => onSelectOption('Ma_consommation')}>

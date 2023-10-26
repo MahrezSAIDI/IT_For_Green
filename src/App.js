@@ -1,28 +1,24 @@
-import React, { useState } from 'react';
-
-import MaConsommation from './Components/MaConsommation';
-import GreenNews from './Components/GreenNews';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './Components/HomePage';
+import SignInPage from './Components/SignInPage';
 import Menu from './Components/Menu';
-function App() {
-  const  [selectedOption, setSelectedOption]=useState(null);
+import SignUpPage from './Components/SignUpPage';
+import MaConsommation from './Components/MaConsommation'
 
-  const renderSelectedOption = () => {
-    switch (selectedOption) {
-      case 'Ma_consommation':
-        return <MaConsommation />;
-      default:
-        return null;
-    }
-  };
+function App() {
   return (
-    <div className="app">
-    <div className="menu-container">
-      <Menu onSelectOption={setSelectedOption} />
+    <div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/SignInPage" element={<SignInPage/>} />
+          <Route path="/SignUpPage" element={<SignUpPage/>} />
+          <Route path="/Menu" element={<Menu/>} />
+          <Route path="/MaConsommation" element={<MaConsommation/>} />
+        </Routes>
+      </Router>
     </div>
-    <div className="content-container">
-      {renderSelectedOption()}
-    </div>
-  </div>
   );
 }
 
