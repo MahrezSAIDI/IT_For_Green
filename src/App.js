@@ -8,14 +8,16 @@ function App() {
 
   const renderSelectedOption = () => {
     switch (selectedOption) {
-      case 'Ma_consommation':
+      case 'ma_consommation':
         return <MaConsommation />;
+      case 'mes_news':
+        return <GreenNews />;
       default:
         return null;
     }
   };
   return (
-    <div className="app">
+  <div className="app">
     <div className="menu-container">
       <Menu onSelectOption={setSelectedOption} />
     </div>

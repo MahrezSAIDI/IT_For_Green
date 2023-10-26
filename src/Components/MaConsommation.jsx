@@ -3,8 +3,16 @@ import React from 'react';
 function MaConsommation() {
   return (
     <div className='conso'>
-      <h1>Option 2</h1>
-      <p>Ceci est le contenu de l'Option 2.</p>
+      <div className='consommations'>
+        <div className='conso_hebdo'><p>Consommation 
+          hebdomadaire</p></div>
+        <div className='conso_jour'><p>Consommation 
+          Journaliére</p></div>
+      </div>
+      <div>
+        <div className='conso_text'></div>
+        <div className='conso_graph'></div>
+      </div>
     </div>
   );
 }

@@ -23,6 +23,7 @@ code {
   width: 90rem;
 height: 53.125rem;
 background-color:  #43F526;
+display: flex;
 /* flex-shrink: 0; */
 /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.40) 0%, rgba(67, 245, 38, 0.40) 100%); */
 }
@@ -152,6 +153,38 @@ align-items: center;
 
 .conso{
   width: 36.25rem;
-height: 21.5625rem;
+  height: 21.5625rem;
+  flex-shrink: 0;
+  margin-top: 5rem;
+}
+.content-container{
+width: 100%;
+}
+.conso_hebdo{
+  width: 19.125rem;
+height: 3.375rem;
 flex-shrink: 0;
+border-radius: 0.625rem;
+background: rgba(217, 217, 217, 0.33);
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.conso_jour{
+  width: 19.125rem;
+height: 3.375rem;
+flex-shrink: 0;
+border-radius: 0.625rem;
+background: rgba(217, 217, 217, 0.33);
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
 }

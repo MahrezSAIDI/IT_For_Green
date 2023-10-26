@@ -5,15 +5,14 @@ function Menu({ onSelectOption }) {
 
 
         <div className='menu'>
-            <div className='green'> <p className='text'>GreenOptimize</p></div>
-            <div className='option_1' onClick={() => onSelectOption('Ma_consommation')}>
+            <div className='option_1' onClick={() => onSelectOption('ma_consommation')}>
                 <div className='icon_1'><img alt="rien" src="../../1-removebg-preview.png" /></div>
                 <div className='nom_1'>
                     <p className='text'>Ma consommation</p>
                 </div>
 
             </div>
-            <div className='option_2'>
+            <div className='option_2' onClick={()=>onSelectOption('mes_news')}>
                 <div className='icon_2'><img alt="rien" src="../../icon_2.png" /></div>
                 <div className='nom_2'>
                     <p className='text'>Analyser et suggérer</p>
