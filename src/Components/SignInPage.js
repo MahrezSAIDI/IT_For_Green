@@ -13,7 +13,7 @@ function SignInPage() {
   const handleLogin = () => {
     // Gérer la logique de connexion ici (par exemple, envoyer les données au serveur)
     if(email === 'root' && password === 'root'){
-      navigate('/Menu');
+      navigate('/BurgerMenuPage');
     } else {
       console.log('error ID');
     }

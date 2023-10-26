@@ -23,8 +23,6 @@ code {
   width: 90rem;
 height: 53.125rem;
 background-color:  #43F526;
-/* flex-shrink: 0; */
-/* background: linear-gradient(180deg, rgba(255, 255, 255, 0.40) 0%, rgba(67, 245, 38, 0.40) 100%); */
 }
 .option_1{
   width: 20.25rem;
@@ -148,10 +146,4 @@ align-items: center;
 
 .option_5 .icon_5 {
   margin-right: 1rem; /* Ajustez la valeur en pixels selon vos besoins */
-}
-
-.conso{
-  width: 36.25rem;
-height: 21.5625rem;
-flex-shrink: 0;
 }
