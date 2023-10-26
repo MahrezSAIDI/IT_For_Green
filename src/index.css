@@ -161,6 +161,7 @@ align-items: center;
 width: 100%;
 }
 .conso_hebdo{
+
   width: 19.125rem;
 height: 3.375rem;
 flex-shrink: 0;
@@ -175,6 +176,7 @@ font-weight: 700;
 line-height: normal;
 }
 .conso_jour{
+  
   width: 19.125rem;
 height: 3.375rem;
 flex-shrink: 0;
@@ -187,4 +189,16 @@ font-size: 1.25rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
+}
+
+.consommations {
+  display: flex;
+  width: 100%; /* Utilisez Flexbox pour organiser les enfants en ligne (ligne) */
+}
+
+.conso_hebdo,
+.conso_jour {
+  display: inline-block; /* Disposition en ligne (inline-block) */
+  margin-right: 2rem;
+  margin-left: 10rem; /* Espace entre les deux éléments, ajustez selon vos besoins */
 }
